@@ -1,7 +1,7 @@
 # CS2050 - @The University of Missorui Columbia 
 
 ## Course Overview
-CS2050 is an intermediate-level computer science course focusing on data structures, algorithms, and programming techniques. Students will develop problem-solving skills and gain hands-on experience with computational thinking.
+CS2050 is an intermediate-level computer science course focusing on data structures, and methods. 
 
 ## Learning Objectives
 - Understand and implement common data structures (arrays, linked lists, stacks, queues, trees, hash tables)
