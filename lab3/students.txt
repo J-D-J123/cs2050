@@ -1,0 +1,12 @@
+2 3 2 2 2
+Rick Sanchez A 4.0
+Morty Smith A 3.8
+Homer Simpson B 3.0
+Peter Griffin B 2.9
+Bart Simpson B 3.2
+Eric Cartman C 2.5
+Stan Marsh C 2.7
+Stewie Griffin D 1.8
+Kyle Broflovski D 2.0
+Meg Griffin F 1.2
+Randy Marsh F 1.5
