@@ -10,8 +10,8 @@
 #include <stdlib.h>
 #include "lab4.h"
 
-/* Static variable to store the size of the employee array */ // -- will edit this out later trust 🙏
-static int arraySize = 0;
+// arraySize is the size of the array (static)
+static int arraySize = 0; 
 
 Employee *readEmployeeArray(FILE *fp) {
 
@@ -44,4 +44,105 @@ Employee *readEmployeeArray(FILE *fp) {
 
     return employees;
 
+}
+
+/* Returns a pointer to the Employee with the given empID, or NULL if not found. */
+Employee *getEmployeeByID(Employee *employees, int empID) {
+
+    int count = 0; 
+
+    for(int i = 0; i < *((int*)employees - 1); i++) {
+
+        if(empID == employees[i].empID) {
+            return (employees + count); 
+        }
+        count++;
+    }
+
+    return NULL;  
+
+}
+
+/**
+ * the getSize array returns the size of the employee array 
+ */
+int getSize(Employee * employees) {
+    return *((int*)employees - 1); 
+}
+
+int setEmpSalary(Employee *employees, int empID, float salary) {
+
+    int size = *((int*)employees-1);
+
+    for(int i = 0; i < size; i++) {
+
+        if(empID == employees[i].empID) {
+
+            employees[i].salary = salary; 
+            return 0; 
+        }
+    }
+    return 1; 
+}
+
+/**
+ * the function getEmpSalary gets the salary of the employee by using employee ID
+ *  returns the salary and returns 1 if there is an error 
+ */
+int getEmpSalary(Employee *employees, int empID) {
+
+    int size = *((int*)employees-1); 
+
+    for(int i = 0; i < size; i++) {
+
+        if(employees[i].empID == empID) {
+
+            return employees[i].salary; 
+        }
+    }
+    return 1; 
+}
+
+/**
+ * the setEmpJobType sets the job type of the employee 
+ */
+int setEmpJobType(Employee *employees, int empID, int job) {
+
+    int size = *((int*)employees-1); 
+
+    for(int i = 0; i < size; i++) {
+
+        if(employees[i].empID == empID) {
+            
+            employees[i].jobType = job; 
+            return 0; 
+        }
+    }
+    return 1; 
+}
+
+/**
+ * the getEmpJobType returns the jobType integer of the employee 
+ */
+int getEmpJobType(Employee * employees, int empID) {
+
+    int size = *((int*)employees-1); 
+
+    for(int i = 0; i < size; i++) {
+
+        if(employees[i].empID == empID) {
+            
+            return employees[i].jobType; 
+            return 0; 
+        }
+    }
+    return 1; 
+}
+
+void freeArray(Employee *employees) {
+
+    if (employees != NULL) {
+        free((int*)employees - 1); // Move back to the original allocated block and free
+        employees = NULL; // Nullify the pointer after freeing
+    }
 }
