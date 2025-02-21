@@ -29,12 +29,12 @@ Employee *getEmployeeByID(Employee *employees, int empID);
 /* Setter and getter functions for salary and job type.
    They return 0 on success and 1 on error (e.g., if the employee isn’t found). */
 int setEmpSalary(Employee *employees, int empID, float salary);
-int getEmpSalary(Employee *employees, int empID, float *salary);
+int getEmpSalary(Employee *employees, int empID);
 int setEmpJobType(Employee *employees, int empID, int job);
-int getEmpJobType(Employee *employees, int empID, int *job);
+int getEmpJobType(Employee *employees, int empID);
 
 /* Returns the number of Employee records read from the file. */
-int getSize(void);
+int getSize(Employee * employees);
 
 /* Frees the allocated Employee array. */
 void freeArray(Employee *employees);
