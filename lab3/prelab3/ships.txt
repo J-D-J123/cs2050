@@ -1,0 +1,11 @@
+2 1 2 2 3
+Voyager Bilder E 9.5
+Pioneer Yaunder E 8.8
+Galaxy Freighter C 4.2
+Stellar Hauler M 4.5
+USS Defiant M 12.1
+Nebula Medic D 6.3
+Andromeda Aid D 5.9
+Cosmic Carrier V 3.9
+City Liner V 3.4
+Star Cruiser V 4.0 
