@@ -10,7 +10,7 @@ CS2050 is an intermediate-level computer science course focusing on data structu
 - Implement smart arrays (jagged arrays) 
 - Work with memory management and pointers
 
-## Programming Language(s) 💻
+## Programming Language 💻
 - The primary language for this course is **C**
 
 ## Sample Code
